@@ -1,0 +1,33 @@
+<header>
+	<div class='header--wrapper'>
+		<div class='header--navigation'>
+			<img src='/assets/img/logo.svg'
+			     alt='logo'>
+			<nav class='navigation'>
+				<a routerLink=''
+				   class='link'
+				   [routerLinkActiveOptions]='{exact:true}'
+				   routerLinkActive='link--active'>Главная</a>
+				<a routerLink='collection-points'
+				   class='link'
+				   routerLinkActive='link--active'>Пункты сбора</a>
+				<a routerLink='market'
+				   class='link'
+				   routerLinkActive='link--active'>ЭкоМаркет</a>
+				<a routerLink='about-service'
+				   class='link'
+				   routerLinkActive='link--active'>О&nbsp;сервисе</a>
+			</nav>
+		</div>
+		<div class='header--auth'>
+			<app-button-with-icon
+				[text]="'Казань'"
+				[icon]="'Geo'">
+			</app-button-with-icon>
+			<app-button-with-icon
+				[text]="'Войти'"
+				[icon]="'Login'">
+			</app-button-with-icon>
+		</div>
+	</div>
+</header>

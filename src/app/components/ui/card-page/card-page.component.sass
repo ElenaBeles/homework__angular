@@ -1,0 +1,32 @@
+@import "../../../styles/mixins"
+
+\:host
+	display: block
+
+.wrapper
+	border: 1px solid rgba(#1222581E, 0.12)
+	height: 300px
+	padding: 40px 0 40px 40px
+	border-radius: 16px
+
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+
+.title
+	@include text-32-40
+	color: $c-main
+
+.subtitle
+	@include text-16
+	margin-top: 14px
+	color: rgba($c-main, 0.56)
+
+.btn
+	background: rgba(#3E507214, 0.08)
+	border-radius: 8px
+	padding: 12px
+	margin-top: 46px
+
+img
+	width: 38%

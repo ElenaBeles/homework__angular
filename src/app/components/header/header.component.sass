@@ -1,0 +1,41 @@
+@import "../../styles/mixins.sass"
+
+\:host
+	display: block
+	height: 80px
+	box-shadow: 0 0.5px 0 rgba(#0000001e, 0.12)
+
+.header
+	&--wrapper
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+
+		max-width: 1200px
+		width: 75vw
+		height: 80px
+
+		margin: 0 auto
+		padding: 31px 0
+	&--navigation
+		display: flex
+		flex-direction: row
+		column-gap: 48px
+	&--auth
+		display: flex
+		flex-direction: row
+		column-gap: 48px
+
+.navigation
+	display: flex
+	column-gap: 24px
+
+.link
+	color: rgba($c-main, 0.64)
+	@include text-14
+	&--active
+		color: rgba($c-main, 1)
+		border-bottom: 3px solid $c-green
+		padding-bottom: 46px
+
+
